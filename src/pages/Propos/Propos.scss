@@ -64,6 +64,11 @@ img {
             }
         }
     }
+
+    .carouselle {
+        width: 90%;
+        margin: 0 auto;
+    }
 }
 
 @media all and (min-width: 1024px) {
@@ -84,8 +89,17 @@ img {
     }
 
     .Photo {
+        display: flex;
+        align-items: center;
+
         p {
+            width: 900px;
             margin-bottom: 2em;
+        }
+
+        .carouselle {
+            width: 30%;
+            margin: 0 auto;
         }
     }
 }

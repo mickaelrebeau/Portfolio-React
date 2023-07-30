@@ -1,23 +1,7 @@
-import Carousel from 'better-react-carousel'
 import './Propos.scss'
-import canard from '../../assets/canard_asterix.jpg'
-import chateau from '../../assets/chateau.jpg'
-import blanche from '../../assets/fleur_blanche.jpg'
-import jaune from '../../assets/fleur_jaune.jpg'
-import fleur from '../../assets/fleur_solo.jpg'
-import golden from '../../assets/haru_golgen_hour.jpg'
-import jardin from '../../assets/haru_jardin.jpg'
-import salon from '../../assets/haru_salon.jpg'
-import horloge from '../../assets/horloge_douzy.jpg'
-import moon from '../../assets/moon.jpg'
-import olga from '../../assets/olga_b&w.jpg'
-import olga2 from '../../assets/olga_jardin.jpg'
-import belgique from '../../assets/oui_belgique.jpg'
-import asterix2 from '../../assets/asterix_2.jpg'
-import parc from '../../assets/parc_leo.jpg'
-import pomme from '../../assets/pomme.jpg'
 import games from '../../assets/games.png'
 import { useState } from 'react'
+import DarkVariantExample from '../../components/Carousel/Carousel'
 
 export default function ProposPage() {
     const [isExpanded, setIsExpanded] = useState(true);
@@ -151,63 +135,10 @@ export default function ProposPage() {
             <p>
                 J'aime énormément la photographie. N'hésitez pas à faire un tour sur mon <a href='https://www.instagram.com/mike_photocollection/' rel="noopener">Instagram</a> pour en voir plus 😉. <br/>
             </p>
+            <div className='carouselle'>
+                <DarkVariantExample/>
+            </div>
         </div>
-        <Carousel
-            cols={4} 
-            rows={1} 
-            gap={10}
-            showDots
-            autoPlay 
-            loop>
-            <Carousel.Item>
-                <img src={pomme} />
-            </Carousel.Item>
-            <Carousel.Item>
-                <img src={chateau} />
-            </Carousel.Item>
-            <Carousel.Item>
-                <img src={olga2} />
-            </Carousel.Item>
-            <Carousel.Item>
-                <img src={canard} />
-            </Carousel.Item>
-            <Carousel.Item>
-                <img src={jaune} />
-            </Carousel.Item>
-            <Carousel.Item>
-                <img src={jardin} />
-            </Carousel.Item>
-            <Carousel.Item>
-                <img src={parc} />
-            </Carousel.Item>
-            <Carousel.Item>
-                <img src={blanche} />
-            </Carousel.Item>
-            <Carousel.Item>
-                <img src={moon} />
-            </Carousel.Item>
-            <Carousel.Item>
-                <img src={asterix2} />
-            </Carousel.Item>
-            <Carousel.Item>
-                <img src={golden} />
-            </Carousel.Item>
-            <Carousel.Item>
-                <img src={fleur} />
-            </Carousel.Item>
-            <Carousel.Item>
-                <img src={horloge} />
-            </Carousel.Item>
-            <Carousel.Item>
-                <img src={olga} />
-            </Carousel.Item>
-            <Carousel.Item>
-                <img src={salon} />
-            </Carousel.Item>
-            <Carousel.Item>
-                <img src={belgique} />
-            </Carousel.Item>
-        </Carousel>
     </div>
     </>
     )

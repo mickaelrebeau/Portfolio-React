@@ -4,6 +4,7 @@ import HomePage from './pages/Home/HomePage'
 import ProposPage from './pages/Propos/ProposPage'
 import Navbar from './components/Navbar/Navbar'
 import Footer from './components/Footer/Footer'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
 
