@@ -1,4 +1,4 @@
-import './Footer.css'
+import './Footer.scss'
 import github from '../../assets/github.png'
 import front from '../../assets/frontendmentor.png'
 import insta from '../../assets/instagram.png'
@@ -8,7 +8,7 @@ import linkedin from '../../assets/linkedin.png'
 export default function Footer() {
     return (
         <footer className="footer">
-            <section className='content'>
+            <section className='contents'>
                 <div className='contact'>
                     <h2>Contact</h2>
                 </div>

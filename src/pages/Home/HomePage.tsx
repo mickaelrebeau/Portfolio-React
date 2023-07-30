@@ -1,4 +1,4 @@
-import './HomePage.css'
+import './HomePage.scss'
 import mike from '../../assets/mike.png'
 import Competences from '../../components/Competences/Competences'
 import Projets from '../../components/Projects/Projets'
@@ -7,7 +7,7 @@ export default function HomePage() {
     return (
     <>
         <div className='home'>
-            <div className='card'>
+            <div className='cards'>
                 <div className='home-text'>
                     <div className='title'> 
                         <img className='mike' src={mike} alt="" /> 

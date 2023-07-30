@@ -6,14 +6,14 @@
     grid-area: footer;
     min-height: 12rem;
     background-color: #f7ebec;
-}
 
-.content {
-    z-index: 2;
-    display: grid;
-    padding: 1rem 2rem;
-    text-align: center;
-    background: var(--footer-background);
+    .contents {
+        z-index: 2;
+        display: grid;
+        padding: 1rem .5rem;
+        text-align: center;
+        background: var(--footer-background);
+    }
 }
 
 .contact {
@@ -26,6 +26,8 @@
 }
 
 .contact-text {
+    margin-top: 1em;
+
     font-size: 1rem;
     font-weight: 500;
 }
@@ -38,11 +40,11 @@
     cursor: pointer;
 
     transition: 250ms ease-in-out;
-}
 
-.social-img:hover {
-    transition: 250ms ease-in-out;
-    filter: invert(45%) sepia(7%) saturate(4843%) hue-rotate(304deg) brightness(99%) contrast(101%);
+    &:hover {
+        transition: 250ms ease-in-out;
+        filter: invert(45%) sepia(7%) saturate(4843%) hue-rotate(304deg) brightness(99%) contrast(101%);
+    }
 }
 
 .mentions {
@@ -56,10 +58,10 @@
 @media all and (min-width: 1024px) {
     .social-img {
         transition: 250ms ease-in-out;
-    }
-    
-    .social-img:hover {
-        transform: translate(0, -5px);
-        transition: 250ms ease-in-out;
+
+        &:hover {
+            transform: translate(0, -5px);
+            transition: 250ms ease-in-out;
+        }
     }
 }
