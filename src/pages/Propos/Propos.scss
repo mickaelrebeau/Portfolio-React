@@ -1,0 +1,91 @@
+.ProposPage {
+    width: 100vw;
+    height: 100%;
+}
+
+img {
+    width: 100%;
+}
+
+.Games {
+    padding: 2em;
+
+    p {
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: 500;
+
+        margin-bottom: 2em;
+    }
+}
+
+.Anime {
+    padding: 2em;
+
+    p {
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+    ul {
+        list-style-type: circle;
+        line-height: 1.5em;
+        font-size: 1.2rem;
+        font-weight: 500;
+        text-align: center;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        p {
+            font-weight: 600;
+            cursor: pointer;
+        }
+    }
+}
+
+.Photo {
+    p {
+        padding: 0 2em;
+        font-size: 1.2rem;
+        font-weight: 500;
+        text-align: center;
+
+        a {
+            text-decoration: none;
+            color: black;
+            font-weight: 600;
+
+            &:hover {
+                color: #ED5565;
+            }
+        }
+    }
+}
+
+@media all and (min-width: 1024px) {
+    .Games {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-self: center;
+
+        p {
+            padding: 0 8em;
+        }
+
+        img {
+            width: 50%;
+            height: auto;
+        }
+    }
+
+    .Photo {
+        p {
+            margin-bottom: 2em;
+        }
+    }
+}

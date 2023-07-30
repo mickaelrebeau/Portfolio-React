@@ -1,0 +1,162 @@
+.Projects-page {
+    margin: 2em 0;
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+    color: #212529;
+}
+
+.projets {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    gap: 1em;
+
+    padding: 1em;
+
+    .projet {
+        width: 100%;
+        height: 180px;
+        border-radius: 10px;
+
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: auto 100%;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, .2);
+
+        .projet-text {
+            height: 100%;
+            border-radius: 10px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .projet-title {
+                margin: 0;
+
+                font-size: 1.8em;
+                font-weight: 600;
+                text-decoration: none;
+
+                &:hover {
+                    color: #ED5565;
+                }
+            }
+
+            p {
+                margin: 0;
+
+                font-size: 1em;
+                font-weight: 500;
+            }
+
+            .projet-depot {
+                margin-top: 1em;
+
+                font-size: 1.2em;
+                font-weight: 600;
+                text-decoration: none;
+
+                &:hover {
+                    color: #ED5565;
+                }
+            }
+        }
+    }
+
+    .central {
+        background-image: url('../../assets/central-music.png');
+        background-size: cover;
+
+        .projet-title,
+        p,
+        .projet-depot {
+            text-align: center;
+            color: #f7ebec;
+            text-shadow: rgba(0, 0, 0, .6) 2px 2px;
+        }
+    }
+
+    .start {
+        background-image: url('../../assets/start.png');
+        background-size: cover;
+
+        .projet-title,
+        p,
+        .projet-depot {
+            color: #212529;
+            text-shadow: rgba(255, 255, 255, .6) 2px 2px;
+        }
+    }
+
+    .w-blog {
+        background-image: url('../../assets/w-blog.png');
+        background-size: cover;
+
+        .projet-title,
+        p,
+        .projet-depot {
+            color: #212529;
+            text-shadow: rgba(255, 255, 255, .6) 2px 2px;
+        }
+    }
+}
+
+@media all and (min-width: 1024px) {
+    .Projects-page {
+        height: 100vh;
+        margin: 0 8em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .projets {
+        width: 100%;
+        height: 500px;
+        flex-direction: row;
+    
+        padding: 2em;
+    
+        .projet {
+            width: 33%;
+            height: 100%;
+            
+            flex-grow: 1;
+            transition: width 500ms ease-in-out;
+    
+            &:hover {
+                width: 500%;
+                transition: width 300ms ease-in-out;
+            }
+    
+            .projet-text {
+                flex-direction: column;
+    
+                backdrop-filter: blur(8px) saturate(0%);
+    
+                &:hover {
+                    backdrop-filter: blur(0) saturate(100%); 
+                }
+    
+                .projet-title {
+                    &:hover {
+                        color: #ED5565;
+                    }
+                }
+    
+                .projet-depot {
+                    &:hover {
+                        color: #ED5565;
+                    }
+                }
+            }
+        }
+    }
+}
