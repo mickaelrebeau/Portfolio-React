@@ -1,0 +1,136 @@
+.Front-competences {
+	width: 100vw;
+	height: 100%;
+    position: relative;
+	background-color: #f7ebec;
+	background-image: url('../../assets/polygon_left2.png');
+    background-position: top 50% left ;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+	.front-competences-card {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	
+		position: relative;
+		top: 0;
+		left: 0;
+		transform: 0;
+	}
+}
+
+.card-c {
+    width: 300px;
+    height: 300px;
+
+    padding: 1em;
+	margin: 1em;
+
+    position: relative;
+    left: 0px;
+
+    background: rgba(222, 217, 217, 0.2);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 10px;
+    box-shadow: -0.5rem 0 1rem rgba(0, 0, 0, .4);
+
+    transition: 0.4s ease-out;
+    z-index: 5;
+
+	h2 {
+		margin-bottom: 1em;
+		font-size: 1.8rem;
+		color: #ED5565;
+		text-shadow: rgba(0, 0, 0, .4) 2px 2px;
+	}
+
+	p {
+		font-weight: 500;
+	}
+
+	.c-text {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+		padding: 0 1em;
+		gap: 1em;
+
+		div {
+			display: flex;
+			align-items: center;
+
+			img {
+				width: 40px;
+				height: 40px;
+			}
+
+			p {
+				margin-left: 1em;
+			}
+		}
+	}
+}
+
+@media all and (min-width: 1024px) {
+	.Front-competences {
+		height: 100vh;
+		position: relative;
+		padding: 0;
+		background-image: url('../../assets/polygon_left2.png'), url('../../assets/polygon_right2.png');
+    	background-position: top left, bottom right ;
+	
+		.front-competences-card {
+			display: flex;
+			flex-direction: row;
+		
+			position: absolute;
+			top: 45%;
+			left: 50%;
+			transform: translate(-50%, -45%);
+		}
+	}
+	
+	.card-c {
+		position: relative;
+		left: 0px;
+	
+		transition: 0.4s ease-out;
+		z-index: 5;
+	
+		h2 {
+			font-size: 1.8rem;
+			color: #ED5565;
+			text-shadow: rgba(0, 0, 0, .2) 1px 1px;
+		}
+	
+		p {
+			font-size: 1.3rem;
+			font-weight: 500;
+		}
+	
+		&:not(:first-child) {
+			margin-left: -50px;
+		}
+	
+		&:hover {
+			transform: translateY(-20px);
+			transition: 0.4s ease-out;
+		}
+	
+		&:hover ~ .card-c {
+			position: relative;
+			left: 50px;
+			transition: 0.4s ease-out;
+		}
+	
+		.c-text {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+	}
+}

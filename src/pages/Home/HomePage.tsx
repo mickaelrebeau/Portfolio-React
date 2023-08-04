@@ -1,7 +1,8 @@
 import './HomePage.scss'
 import mike from '../../assets/mike.png'
-import Competences from '../../components/Competences/Competences'
+import Front from '../../components/Front/Front'
 import Projets from '../../components/Projects/Projets'
+import Back from '../../components/Back/Back'
 
 export default function HomePage() {
     return (
@@ -29,7 +30,8 @@ export default function HomePage() {
             </div>
         </div>
         <Projets/>
-        <Competences/>
+        <Front/>
+        <Back/>
     </>
     )
 }
